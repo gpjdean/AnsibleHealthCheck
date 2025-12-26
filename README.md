@@ -68,18 +68,18 @@ Unpacking objects: 100% (40/40), done.
 ## 修改项目ansible.cfg配置
 ```bash
 # 进入到项目路径
-[root@instance-euwvmd1u ~]# cd ansible-HealthCheck
+[root@instance-euwvmd1u ~]# cd AnsibleHealthCheck
 
 # 指空文件内容
-[root@instance-euwvmd1u ansible-HealthCheck]# >ansible.cfg 
+[root@instance-euwvmd1u AnsibleHealthCheck]# >ansible.cfg 
 
 # 编辑配置文件，将下面的内容写入到ansible.cfg文件内
-[root@instance-euwvmd1u ansible-HealthCheck]# vim ansible.cfg
+[root@instance-euwvmd1u AnsibleHealthCheck]# vim ansible.cfg
 
 [defaults]
 host_key_checking=False
 remote_user=root
-filter_plugins=/root/ansible-HealthCheck/filter_plugins
+filter_plugins=/root/AnsibleHealthCheck/filter_plugins
 [inventory]
 [privilege_escalation]
 [paramiko_connection]
@@ -94,7 +94,7 @@ filter_plugins=/root/ansible-HealthCheck/filter_plugins
 
 ## 配置hosts主机信息
 ```bash
-[root@instance-euwvmd1u ansible-HealthCheck]# vim hosts
+[root@instance-euwvmd1u AnsibleHealthCheck]# vim hosts
 # 内容如下
 [k8s]
 120.48.168.44
