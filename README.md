@@ -2,7 +2,7 @@
 
 ## 项目地址
 ```bash
-https://github.com/liushiju/ansible-HealthCheck
+https://github.com/gpjdean/AnsibleHealthCheck.git
 ```
 
 
@@ -18,7 +18,7 @@ ansible --version
 
 ## 克隆代码
 ```bash
-[root@instance-euwvmd1u ~]# git clone https://ghfast.top/https://github.com/liushiju/ansible-HealthCheck.git
+[root@instance-euwvmd1u ~]# git clone https://ghfast.top/https://github.com/gpjdean/AnsibleHealthCheck.git
 Cloning into 'ansible-HealthCheck'...
 remote: Enumerating objects: 40, done.
 remote: Counting objects: 100% (40/40), done.
@@ -69,7 +69,7 @@ ansible_ssh_pass="你的主机密码"
 
 ## 报告及邮箱配置【可选】
 ```bash
-vim /root/ansible-HealthCheck-main/os-check/defaults/main.yaml，修改以下内容：
+vim /root/AnsibleHealthCheck/os-check/defaults/main.yaml，修改以下内容：
 报告目录：check_report_path	设置报告生成目录（例如 /tmp）
 SMTP相关变量（check_mail_host、check_mail_port、check_mail_username、check_mail_password、check_mail_to）根据实际情况填写
 ```
@@ -101,7 +101,7 @@ PLAY RECAP *********************************************************************
 ## 配置hosts主机信息
 ```bash
 # 前台执行
-[root@instance-euwvmd1u ansible-HealthCheck]# cd /tmp/ && python -m SimpleHTTPServer 30000
+[root@instance-euwvmd1u AnsibleHealthCheck]# cd /tmp/ && python -m SimpleHTTPServer 30000
 Serving HTTP on 0.0.0.0 port 30000 ...
 
 
