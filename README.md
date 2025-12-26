@@ -134,19 +134,22 @@ PLAY RECAP *********************************************************************
 
 
 
-## 配置hosts主机信息
+## 创建一个http服务实现Web访问
 ```bash
 # 前台执行
 [root@instance-euwvmd1u AnsibleHealthCheck]# cd /tmp/ && python -m SimpleHTTPServer 30000
 Serving HTTP on 0.0.0.0 port 30000 ...
 
-
 # 后台运行
-cd /tmp/ && nohup python -m SimpleHTTPServer 30000 >/dev/null2 >&1 &
+[root@instance-euwvmd1u AnsibleHealthCheck]# cd /tmp/ && nohup python -m SimpleHTTPServer 30000 >/dev/null 2>&1 &
 ```
 
 
-## 配置hosts主机信息
+## 浏览器访问页面
 ```bash
-http://120.48.168.44:30000/report-2025-12-26.html
+http://120.48.168.44:30000/report-2025-xx-xx.html
 ```
+
+## 效果图
+<img width="2559" height="590" alt="image" src="https://github.com/user-attachments/assets/81470925-8cdf-4094-b571-59f352509a06" />
+
